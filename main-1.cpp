@@ -3,6 +3,7 @@
 #include <vector>
 #include <algorithm>
 
+// Class that reads words from a file and sorts them in alphabetical order
 class WordSorter {
 public:
     std::vector<std::string> getSortedWords(std::ifstream &file) {
@@ -21,7 +22,7 @@ public:
 };
 
 
-
+// takes in file name as command line argument and outputs sorted words
 int main(int argc, char* argv[]) {
     if (argc != 2) {
         std::cerr << "Error: Invalid number of arguments." << std::endl;
